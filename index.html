@@ -3,35 +3,56 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>My Web Page</title> 
+    <title>Profil Dynamique</title> 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-
     <h1>Profil Dynamique</h1>
-     <form id="profile-form">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom">
+    <div class="container">
+        <form id="profile-form" class="profile-form">
+            <h2>Éditez votre profil</h2>
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio :</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="theme">Couleur thème :</label>
+                <input type="color" id="theme" name="theme">
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo (URL) :</label>
+                <input type="url" id="photo" name="photo">
+            </div>
+            <div class="form-group skills-group">
+                <label>Compétences :</label>
+                <div class="skills-input-row">
+                    <input type="text" id="skill-input" name="skills[]" placeholder="Ajouter une compétence">
+                    <button type="button" id="add-skill">+</button>
+                </div>
+                <ul id="skills-list"></ul>
+            </div>
+            <button type="submit" class="save-btn">Sauvegarder</button>
+        </form>
 
-    <label for="bio">Bio :</label>
-    <textarea id="bio" name="bio"></textarea>
-
-    <label for="theme">Couleur thème :</label>
-    <input type="color" id="theme" name="theme">
-
-    <label for="photo">Photo (URL) :</label>
-    <input type="url" id="photo" name="photo">
-
-    <button type="submit">Sauvegarder</button>
-  </form>
-
-  <!-- Zone d’aperçu  -->
-  <div id="preview">
-    <h2>Aperçu</h2>
-    <p id="preview-nom"> [ ton nom]</p>
-    <p id="preview-bio"> [ ta bio]</p>
-    <img id="preview-photo" src="" alt="photo de profil">
-  </div>
+        <div id="preview" class="profile-preview">
+            <h2>Aperçu</h2>
+            <div class="preview-card">
+                <img id="preview-photo" src="" alt="photo de profil">
+                <div class="preview-info">
+                    <h3 id="preview-nom">[ ton nom]</h3>
+                    <p id="preview-bio">[ ta bio]</p>
+                    <div id="preview-skills">
+                        <h4>Compétences :</h4>
+                        <ul id="preview-skills-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

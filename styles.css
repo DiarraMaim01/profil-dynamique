@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.profile-form, .profile-preview {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    width: 350px;
+}
+
+.profile-form h2, .profile-preview h2 {
+    margin-top: 0;
+    color: #1976d2;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"], input[type="url"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-top: 4px;
+}
+
+button, .save-btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover, .save-btn:hover {
+    background: #1565c0;
+}
+
+.skills-group {
+    margin-bottom: 18px;
+}
+
+.skills-input-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+#skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills-list li {
+    background: #e3f2fd;
+    color: #1976d2;
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.98em;
+}
+
+.profile-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9fafb;
+    border-radius: 10px;
+    padding: 24px 16px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#preview-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e0e0e0;
+    margin-bottom: 18px;
+}
+
+.preview-info h3 {
+    margin: 0 0 8px 0;
+    color: #222;
+}
+
+.preview-info p {
+    color: #555;
+    font-size: 1em;
+    margin: 0 0 12px 0;
+}
+
+#preview-skills h4 {
+    margin: 0 0 8px 0;
+    color: #1976d2;
+    font-size: 1em;
+}
+
+#preview-skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+#preview-skills-list li {
+    background: #bbdefb;
+    color: #1565c0;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.98em;
+}
